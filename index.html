@@ -11,7 +11,7 @@
     *{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}
     header{background:linear-gradient(120deg,#16324f,#245477);color:white;padding:22px 18px 26px}header .wrap,main{width:min(760px,100%);margin:auto}header .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.78;font-weight:700}header h1{font-size:clamp(24px,5vw,32px);margin:8px 0 5px}header p{margin:0;color:#d9e7f4;font-size:14px}
     main{padding:18px 14px 34px}.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:14px;box-shadow:0 8px 24px #19324c0a}.section-title{font-size:15px;font-weight:800;margin:0 0 12px}.field-label{display:block;font-size:13px;font-weight:700;margin:0 0 7px}.input{display:block;width:100%;border:1px solid #cbd5e1;border-radius:10px;padding:12px;font:inherit;font-size:14px;background:white;color:var(--ink)}.help{font-size:12px;color:var(--muted);line-height:1.55;margin:8px 0 0}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:13px}.btn{border:0;border-radius:10px;padding:12px 15px;font:inherit;font-size:14px;font-weight:750;cursor:pointer}.btn:disabled{opacity:.5;cursor:not-allowed}.primary{background:var(--blue);color:white}.dark{background:var(--navy);color:white}.light{background:#eaf0f6;color:#24364b}.success{background:#dcfce7;color:#166534}.danger{background:#fee2e2;color:#991b1b}
-    #reader{width:100%;max-width:480px;margin:0 auto;overflow:hidden;border-radius:14px}#reader video{object-fit:cover;border-radius:12px}#reader__scan_region{min-height:240px}#reader__dashboard_section_csr button{border:0;border-radius:8px;padding:8px 10px;background:#eaf0f6;color:#24364b;font-weight:700}#reader__dashboard_section_csr select{padding:8px;border-radius:8px;max-width:100%}.camera-placeholder{padding:34px 18px;text-align:center;border:1px dashed #cbd5e1;border-radius:14px;color:var(--muted);background:#f8fafc}.status{display:flex;gap:10px;align-items:flex-start;padding:12px 13px;border-radius:12px;font-size:14px;line-height:1.45;background:#f1f5f9;color:#334155}.status.good{background:#dcfce7;color:#166534}.status.bad{background:#fee2e2;color:#991b1b}.status.warn{background:#fef3c7;color:#92400e}.dot{width:9px;height:9px;border-radius:50%;background:currentColor;margin-top:5px;flex:none}.attendance-toast{position:fixed;top:18px;left:50%;transform:translate(-50%,-18px);width:min(420px,calc(100vw - 28px));z-index:9999;background:#fff;border:1px solid #bbf7d0;border-left:5px solid #16a34a;border-radius:16px;padding:15px 17px;box-shadow:0 18px 55px #0f172a30;opacity:0;visibility:hidden;transition:opacity .22s ease,transform .22s ease,visibility .22s}.attendance-toast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}.attendance-toast .toast-title{font-size:16px;font-weight:800;color:#166534;line-height:1.35}.attendance-toast .toast-name{font-size:12px;font-weight:600;color:#24364b;line-height:1.5;margin-top:4px;overflow-wrap:anywhere}.attendance-toast .toast-date{font-size:12px;font-weight:500;color:#64748b;line-height:1.45;margin-top:4px}.footer{text-align:center;font-size:12px;color:var(--muted);padding:8px 0 20px}.tiny{font-size:11px;color:var(--muted)}
+    #reader{width:100%;max-width:480px;margin:0 auto;overflow:hidden;border-radius:14px}#reader video{object-fit:cover;border-radius:12px}#reader__scan_region{min-height:240px}#reader__dashboard_section_csr button{border:0;border-radius:8px;padding:8px 10px;background:#eaf0f6;color:#24364b;font-weight:700}#reader__dashboard_section_csr select{padding:8px;border-radius:8px;max-width:100%}.camera-placeholder{padding:34px 18px;text-align:center;border:1px dashed #cbd5e1;border-radius:14px;color:var(--muted);background:#f8fafc}.status{display:flex;gap:10px;align-items:flex-start;padding:12px 13px;border-radius:12px;font-size:14px;line-height:1.45;background:#f1f5f9;color:#334155}.status.good{background:#dcfce7;color:#166534}.status.bad{background:#fee2e2;color:#991b1b}.status.warn{background:#fef3c7;color:#92400e}.dot{width:9px;height:9px;border-radius:50%;background:currentColor;margin-top:5px;flex:none}.attendance-toast{position:fixed;top:max(12px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);width:min(420px,calc(100vw - 28px));z-index:2147483647;background:#fff;border:1px solid #bbf7d0;border-left:5px solid #16a34a;border-radius:16px;padding:15px 17px;box-shadow:0 18px 55px #0f172a50;opacity:0;visibility:hidden;pointer-events:none}.attendance-toast.show{opacity:1;visibility:visible}.attendance-toast.processing{border-color:#bfdbfe;border-left-color:#2563eb}.attendance-toast.duplicate{border-color:#fde68a;border-left-color:#d97706}.attendance-toast.error{border-color:#fecaca;border-left-color:#dc2626}.attendance-toast.duplicate .toast-title{color:#92400e}.attendance-toast.error .toast-title{color:#991b1b}.attendance-toast .toast-title{font-size:16px;font-weight:800;color:#166534;line-height:1.35}.attendance-toast .toast-name{font-size:12px;font-weight:600;color:#24364b;line-height:1.5;margin-top:4px;overflow-wrap:anywhere}.attendance-toast .toast-date{font-size:12px;font-weight:500;color:#64748b;line-height:1.45;margin-top:4px}.footer{text-align:center;font-size:12px;color:var(--muted);padding:8px 0 20px}.tiny{font-size:11px;color:var(--muted)}
     @media(min-width:600px){main{padding-top:24px}.panel{padding:22px}} 
   </style>
 </head>
@@ -114,8 +114,10 @@
     reader.innerHTML = '<div class="camera-placeholder">Tekan <b>Mulai Kamera</b> untuk memindai QR.</div>';
     scanner = null;
   }
-  function showAttendanceToast(nama, nisn, tanggal, waktu) {
-    toastName.textContent = 'Selamat Datang ' + nama + ' - ' + nisn;
+  function showAttendanceToast(title, nama, nisn, tanggal, waktu, kind='') {
+    toast.className = 'attendance-toast' + (kind ? ' ' + kind : '');
+    toast.querySelector('.toast-title').textContent = title;
+    toastName.textContent = nama ? (nisn ? nama + ' - ' + nisn : nama) : '';
     let dateLabel = '';
     const match = String(tanggal || '').match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
     if (match) {
@@ -126,30 +128,55 @@
     }
     toastDate.textContent = dateLabel + (waktu ? ' · ' + waktu : '');
     toast.classList.add('show');
-    if (toastTimer) clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => { toast.classList.remove('show'); toastTimer = null; }, 3000);
+  }
+
+  function hideAttendanceToast() {
+    toast.classList.remove('show', 'processing', 'duplicate', 'error');
+  }
+
+  function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
   }
 
   async function onScanSuccess(decodedText) {
     const nisn = String(decodedText || '').trim();
     const now = Date.now();
-    if (!nisn || busy || (nisn === lastValue && now - lastAt < 5000)) return;
-    busy = true; lastValue = nisn; lastAt = now;
+    if (!nisn || busy || toast.classList.contains('show') || (nisn === lastValue && now - lastAt < 5000)) return;
+    busy = true;
+    lastValue = nisn;
+    lastAt = now;
     try { if (scanner && scanner.isScanning && scanner.pause) scanner.pause(true); } catch(_) {}
-    setStatus(scanStatus, 'QR terbaca. Mengirim ke database…');
+
+    // Tampilkan notifikasi pemrosesan seketika, tanpa menunggu balasan server.
+    showAttendanceToast('Memproses Absensi…', 'Sedang memeriksa data siswa', nisn, '', '', 'processing');
+    setStatus(scanStatus, 'QR terbaca. Memeriksa status kehadiran…');
     try {
       const res = await jsonp({action:'scan', nisn});
-      if (!res || !res.success) throw new Error((res && res.message) || 'Backend tidak dapat mencatat kehadiran.');
-      showAttendanceToast(res.nama || 'Siswa', res.nisn || nisn, res.tanggal || '', res.waktu || '');
-      setStatus(scanStatus, 'Kehadiran berhasil dicatat. Siap memindai QR berikutnya.', 'good');
+      if (res && res.duplicate) {
+        showAttendanceToast('Sudah Absen Hari Ini', res.nama || 'Siswa', res.nisn || nisn,
+          res.tanggal || '', res.waktu || '', 'duplicate');
+        setStatus(scanStatus, (res.nama || 'Siswa') + ' sudah tercatat hadir hari ini.', 'warn');
+      } else if (res && res.success) {
+        showAttendanceToast('Absensi Berhasil', res.nama || 'Siswa',
+          res.nisn || nisn, res.tanggal || '', res.waktu || '');
+        toastName.textContent = 'Selamat Datang ' + (res.nama || 'Siswa') + ' - ' + (res.nisn || nisn);
+        setStatus(scanStatus, 'Kehadiran berhasil dicatat. Tunggu notifikasi selesai sebelum scan berikutnya.', 'good');
+      } else {
+        throw new Error((res && res.message) || 'Backend tidak dapat mencatat kehadiran.');
+      }
     } catch(e) {
+      showAttendanceToast('Absensi Gagal', e.message || 'Terjadi kesalahan saat mencatat absensi.', '', '', '', 'error');
       setStatus(scanStatus, e.message, 'bad');
     } finally {
+      // Kamera tetap terkunci selama notifikasi terlihat selama 3 detik penuh.
+      await wait(3000);
+      hideAttendanceToast();
       busy = false;
       try { if (scanner && scannerRunning && scanner.resume) scanner.resume(); } catch(_) {}
     }
   }
-  $('startBtn').addEventListener('click', startCamera);
+
+    $('startBtn').addEventListener('click', startCamera);
   $('stopBtn').addEventListener('click', stopCamera);
   window.addEventListener('pagehide', () => { try { if (scanner && scanner.isScanning) scanner.stop(); } catch(_) {} });
   if (!window.isSecureContext) setStatus(scanStatus, 'Halaman tidak berjalan dalam konteks aman. Gunakan URL HTTPS GitHub Pages.', 'warn');
