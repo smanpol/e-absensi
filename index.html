@@ -153,9 +153,22 @@
     try {
       const res = await jsonp({action:'scan', nisn});
       if (res && res.duplicate) {
-        showAttendanceToast('Sudah Absen Hari Ini', res.nama || 'Siswa', res.nisn || nisn,
-          res.tanggal || '', res.waktu || '', 'duplicate');
-        setStatus(scanStatus, (res.nama || 'Siswa') + ' sudah tercatat hadir hari ini.', 'warn');
+        const namaMurid = res.nama || 'Siswa';
+
+        showAttendanceToast(
+          namaMurid + ' sudah melakukan absensi hari ini',
+          namaMurid,
+          res.nisn || nisn,
+          res.tanggal || '',
+          res.waktu || '',
+          'duplicate'
+        );
+
+        setStatus(
+          scanStatus,
+          namaMurid + ' sudah melakukan absensi hari ini.',
+          'warn'
+        );
       } else if (res && res.success) {
         showAttendanceToast('Absensi Berhasil', res.nama || 'Siswa',
           res.nisn || nisn, res.tanggal || '', res.waktu || '');
