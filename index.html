@@ -170,10 +170,12 @@
           'warn'
         );
       } else if (res && res.success) {
-        showAttendanceToast('Absensi Berhasil', res.nama || 'Siswa',
+        const jenis = String(res.jenisAbsen || 'DATANG').toUpperCase();
+        const judul = jenis === 'PULANG' ? 'Absensi PULANG Berhasil' : 'Absensi DATANG Berhasil';
+        showAttendanceToast(judul, res.nama || 'Siswa',
           res.nisn || nisn, res.tanggal || '', res.waktu || '');
-        toastName.textContent = 'Selamat Datang ' + (res.nama || 'Siswa') + ' - ' + (res.nisn || nisn);
-        setStatus(scanStatus, 'Kehadiran berhasil dicatat. Tunggu notifikasi selesai sebelum scan berikutnya.', 'good');
+        toastName.textContent = (jenis === 'PULANG' ? 'Pulang: ' : 'Datang: ') + (res.nama || 'Siswa') + ' - ' + (res.nisn || nisn);
+        setStatus(scanStatus, 'Absensi ' + jenis + ' berhasil dicatat. Tunggu notifikasi selesai sebelum scan berikutnya.', 'good');
       } else {
         throw new Error((res && res.message) || 'Backend tidak dapat mencatat kehadiran.');
       }
